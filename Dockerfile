@@ -182,11 +182,7 @@ RUN docker-php-ext-install mcrypt \
 # bcmath:
 #####################################
 
-ARG INSTALL_BCMATH=false
-RUN if [ ${INSTALL_BCMATH} = true ]; then \
-    # Install the bcmath extension
-    docker-php-ext-install bcmath \
-;fi
+RUN docker-php-ext-install bcmath
 
 #####################################
 # PHP Memcached:
