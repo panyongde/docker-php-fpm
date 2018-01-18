@@ -264,10 +264,7 @@ RUN docker-php-ext-install bcmath
 # Mysqli Modifications:
 #####################################
 
-# ARG INSTALL_MYSQLI=false
-# RUN if [ ${INSTALL_MYSQLI} = true ]; then \
-#     docker-php-ext-install mysqli \
-# ;fi
+RUN docker-php-ext-install mysqli
 
 #####################################
 # Tokenizer Modifications:
